@@ -48,3 +48,14 @@ def send_msg(class_name,status,start_time,end_time):
     webhook.send()
 
     print("Sent message to discord")
+
+def send_test():
+    WEBHOOK_URL = webhook_url 
+
+    webhook = DiscordWebhooks(WEBHOOK_URL)
+    # Attaches a footer
+    webhook.set_footer(text='-- Aniket Ranjan')
+    webhook.set_content(title='Test Message',
+                        description="Congratulation on successful webhook test")
+    webhook.send()
+    print("test message sent")
