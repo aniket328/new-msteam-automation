@@ -2,6 +2,8 @@
 
 This bot attends the online classes (or meetings) held on Microsoft teams, according to the given timetable.
 
+# YOu need to make chromedriver executable in linux environment
+```chmod a+x chromedriver```
 
 ## Configure
 
