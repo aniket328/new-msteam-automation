@@ -14,6 +14,12 @@ from selenium.webdriver.common.action_chains import ActionChains
 import discord_webhook
 
 opt = Options()
+options = Options()
+#linux
+#opt.add_argument('--headless')
+#opt.add_argument('--no-sandbox')
+#opt.add_argument('--disable-dev-shm-usage')
+
 opt.add_argument("--disable-infobars")
 opt.add_argument("start-maximized")
 opt.add_argument("--disable-extensions")
@@ -259,7 +265,8 @@ def joinclass(class_name,start_time,end_time):
 def start_browser():
 
 	global driver
-	driver = webdriver.Chrome(chrome_options=opt,service_log_path='NUL')
+	driver = webdriver.Chrome('./chromedriver',chrome_options=opt,service_log_path='NUL') #linux
+	#driver = webdriver.Chrome(chrome_options=opt,service_log_path='NUL')  #windows
 
 	driver.get(URL)
 
