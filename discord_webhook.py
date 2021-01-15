@@ -11,7 +11,7 @@ def send_msg(class_name,status,start_time,end_time):
 
     webhook = DiscordWebhooks(WEBHOOK_URL)
     # Attaches a footer
-    webhook.set_footer(text='-- Teja Swaroop')
+    webhook.set_footer(text='-- selenium bot')
 
     if(status=="joined"):
 
@@ -48,3 +48,15 @@ def send_msg(class_name,status,start_time,end_time):
     webhook.send()
 
     print("Sent message to discord")
+
+def send_test(textm):
+    WEBHOOK_URL = webhook_url 
+
+    webhook = DiscordWebhooks(WEBHOOK_URL)
+    # Attaches a footer
+    webhook.set_footer(text='-- selenium bot')
+    webhook.set_content(title='Test Message',
+                        description='sending log')
+    webhook.add_field(name='log', value=textm)
+    webhook.send()
+    print("test message sent")
