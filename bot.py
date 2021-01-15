@@ -326,7 +326,7 @@ if __name__=="__main__":
 	elif (op==4):
 		delete_timetable()
 	elif(op==5):
-		discord_webhook.send_test()
+		discord_webhook.send_test("Starting bot!")
 		sched()
 	else:
 		print("Invalid input!") 
