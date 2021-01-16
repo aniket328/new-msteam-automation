@@ -39,7 +39,7 @@ URL = "https://teams.microsoft.com"
 PASS = 'S7Lf(J%xgUXt\"8\''
 
 #put your teams credentials here
-CREDS = {'email':'aranjan@iitkgp.ac.in','passwd':PASS}
+CREDS = {'email':'email','passwd':'password'}
 
 
 
