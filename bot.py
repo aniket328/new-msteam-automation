@@ -12,7 +12,7 @@ import schedule
 from datetime import datetime
 from selenium.webdriver.common.action_chains import ActionChains
 import discord_webhook
-
+#please make chromedriver executable in ubuntu with command: chmod a+x chromedriver
 opt = Options()
 options = Options()
 #linux
